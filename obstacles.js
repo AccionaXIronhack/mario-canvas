@@ -12,8 +12,11 @@ class Obstacle {
   }
 
   draw() {
+    this.ctx.fillRect(this.posX, this.posY, this.width, this.height);
+    this.move();
   }
 
   move() {
+    this.posX -= this.velX;
   }
 }
